@@ -33,6 +33,7 @@ toc:
     - name: Decoupling Representation and Classifier for Lonng-Tailed Recognition
     - name: Quantization and Mixed Precision Quantization (MPQ)
   - name: Insight from Experiments
+    subsections:
     - name: Are Traditional Evaluation Methods Applicable?
     - name: Can Effecitve Training Methods Address LTD Issues?
     - name: Does LTD Impact Quantized Modes?
