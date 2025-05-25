@@ -12,7 +12,7 @@ hidden: true
 #   - name: Anonymous
 
 authors:
-  - name: Albert Einstein
+  - name: Myeongjun Lee
     url: "https://github.com/mjlee5982"
     affiliations:
       name: POHANG, POSTECH
@@ -33,6 +33,11 @@ toc:
     - name: Decoupling Representation and Classifier for Lonng-Tailed Recognition
     - name: Quantization & Mixed Precision Quantization (MPQ)
   - name: Insight from Experiments
+    - name: Are Traditional Evaluation Methods Applicable?
+    - name: Can Effecitve Training Methods Address LTD Issues?
+    - name: Does LTD Impact Quantized Modes?
+    - name: Can Quantization Process Mitigate REal-World LTD Issues?
+  - -name : Conclusion 
 
 
 
