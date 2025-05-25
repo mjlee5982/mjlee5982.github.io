@@ -1,9 +1,8 @@
 ---
 layout: distill
 title: Rethinking Quantization for the Real World
-description: Your blog post's abstract.
-  This blog post highlights the fact that most existing quantization techniques have been developed and validated under clean, balanced benchmark settings. It critically examines whether these methods can be reliably applied in real-world environments, where data imbalance and custom evaluation metrics constraints are the norm. Furthermore, it proposes ideas for partially mitigating the impact of real-world data imbalance during the Mixed Precision Quantization (MPQ) process.
-date: 2025-04-28
+description: This blog post highlights the fact that most existing quantization techniques have been developed and validated under clean, balanced benchmark settings. It critically examines whether these methods can be reliably applied in real-world environments, where data imbalance and custom evaluation metrics constraints are the norm. Furthermore, it proposes ideas for partially mitigating the impact of real-world data imbalance during the Mixed Precision Quantization (MPQ) process.
+date: 2025-05-30
 future: true
 htmlwidgets: true
 hidden: true
@@ -14,37 +13,29 @@ hidden: true
 
 authors:
   - name: Albert Einstein
-    url: "https://en.wikipedia.org/wiki/Albert_Einstein"
+    url: "https://github.com/mjlee5982"
     affiliations:
-      name: IAS, Princeton
-  - name: Boris Podolsky
-    url: "https://en.wikipedia.org/wiki/Boris_Podolsky"
-    affiliations:
-      name: IAS, Princeton
-  - name: Nathan Rosen
-    url: "https://en.wikipedia.org/wiki/Nathan_Rosen"
-    affiliations:
-      name: IAS, Princeton
+      name: POHANG, POSTECH
 
 # must be the exact same name as your blogpost
-bibliography: 2025-04-28-distill-example.bib  
+bibliography: 2025-05-30-rethinking-quantization-for-the-real-world.bib
 
 # Add a table of contents to your post.
 #   - make sure that TOC names match the actual section names
 #     for hyperlinks within the post to work correctly. 
 #   - please use this format rather than manually creating a markdown table of contents.
 toc:
-  - name: Equations
-  - name: Images and Figures
+  - name: Introduction
+  - name: Background
     subsections:
-    - name: Interactive Figures
-  - name: Citations
-  - name: Footnotes
-  - name: Code Blocks
-  - name: Diagrams
-  - name: Tweets
-  - name: Layouts
-  - name: Other Typography?
+    - name: Application Driven Machine Learning (ADML)
+    - name: Long Tail Distribution (LTD)
+    - name: Decoupling Representation and Classifier for Lonng-Tailed Recognition
+    - name: Quantization & Mixed Precision Quantization (MPQ)
+  - name: Insight from Experiments
+
+
+
 
 # Below is an example of injecting additional post-specific styles.
 # This is used in the 'Layouts' section of this post.
