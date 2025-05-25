@@ -31,7 +31,7 @@ toc:
     - name: Application Driven Machine Learning (ADML)
     - name: Long Tail Distribution (LTD)
     - name: Decoupling Representation and Classifier for Lonng-Tailed Recognition
-    - name: Quantization & Mixed Precision Quantization (MPQ)
+    - name: Quantization and Mixed Precision Quantization (MPQ)
   - name: Insight from Experiments
     - name: Are Traditional Evaluation Methods Applicable?
     - name: Can Effecitve Training Methods Address LTD Issues?
