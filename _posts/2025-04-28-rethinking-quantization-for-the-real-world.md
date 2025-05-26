@@ -71,6 +71,19 @@ This blog post offers a fresh perspective on traditional machine learning concep
 ### 2.1 Application Driven Machine Learning (ADML)
 Application-Driven Machine Learning (ADML) is an approach to machine learning research emphasizing the design of algorithms specifically tailored to address real-world problems, rather than optimizing performance solely on standardized benchmark datasets. Unlike traditional methods-driven research, which prioritizes generalized metrics like accuracy and loss on clean, well-structured datasets (e.g., CIFAR-10, ImageNet), ADML explicitly incorporates domain-specific considerations, such as custom evaluation criteria, data characteristics, and user-defined constraints. This paradigm is crucial because it acknowledges that real-world tasks frequently differ substantially from benchmark scenarios. For instance, tasks in remote sensing, healthcare, or biodiversity monitoring often require models to consider computational constraints, domain knowledge, and specialized metrics like uncertainty quantification or cost-sensitive accuracy. Recognizing and addressing these practical considerations significantly enhances the applicability and effectiveness of machine learning solutions in real-world environments.
 
+
+<div class="row mt-3">
+    {% include figure.html path="assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla.png" class="img-fluid" %}
+</div>
+<div class="caption">
+    Figure 1: Replication of the Saad and Solla <d-cite key="saad1995online"></d-cite> results. 
+Simulated training of a soft committee machine student network with a fixed teacher network (blue) is compared 
+against the analytical ODEs describing the time evolution of the order parameters (red). 
+In this setup, N = 784, M = 4, and K varies by column. Notably, the generalization error is significantly reduced when 
+the student network has a size of K = 4 or larger, since the student is "realizable" (has sufficient parameters) with respect to the teacher.
+</div>
+
+
 ### 2.2 Long Tail Distribution (LTD)
 Long-tail distribution (LTD) describes a scenario where a small number of classes dominate the dataset (head classes), while the majority of classes have significantly fewer samples (tail classes). Such distributions are ubiquitous in real-world datasets like iNaturalist (biodiversity data), ImageNet-LT, and Places-LT, where many categories are represented by very few examples. LTD poses substantial challenges for machine learning models, which tend to overfit on head classes while underperforming on tail classes due to insufficient exposure during training. Consequently, the overall accuracy metric often masks severe performance degradation on rare classes, making standard evaluation metrics unreliable indicators of true model effectiveness. Addressing LTD requires strategies such as data re-sampling, class-balanced losses, and specialized evaluation protocols that better reflect performance across all classes, ensuring equitable attention to rare but potentially critical categories.
 
