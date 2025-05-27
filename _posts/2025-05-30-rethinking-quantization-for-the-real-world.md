@@ -11,8 +11,7 @@ hidden: true
 # authors:
 #   - name: Anonymous
 
-
- authors:
+authors:
   - name: Myeongjun Lee
     url: "https://github.com/mjlee5982"
     affiliations:
