@@ -14,6 +14,9 @@ hidden: true
 # Anonymize when submitting
  authors:
    - name: Anonymous
+     url : Anonymous
+     affiliations:
+       name: Anonymous
 
 # authors:
 #  - name: Myeongjun Lee
