@@ -12,10 +12,10 @@ authors:
   - name: Anonymous
 
 # authors:
-#  - name: Myeongjun Lee
-#    url: "https://github.com/mjlee5982"
+#  - name: 
+#    url: " "
 #    affiliations:
-#      name: POHANG, POSTECH
+#      name: 
 
 # must be the exact same name as your blogpost
 bibliography: 2025-05-30-rethinking-quantization-for-the-real-world.bib
@@ -38,7 +38,12 @@ toc:
     - name: Can Effecitve Training Methods Address LTD Issues?
     - name: Does LTD Impact Quantized Modes?
     - name: Can Quantization Process Mitigate REal-World LTD Issues?
-  - -name : Conclusion 
+  - name : Conclusion
+    subsections:
+    - name: What problem is this work trying to tackle?
+    - name: That contributions did this work make, and what impact should this work have?
+    - name: How new is this effort?
+    - name: what are the limitations of this work?
 
 
 # Below is an example of injecting additional post-specific styles.
