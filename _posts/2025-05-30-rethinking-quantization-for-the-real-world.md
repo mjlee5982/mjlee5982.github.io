@@ -11,11 +11,15 @@ hidden: true
 # authors:
 #   - name: Anonymous
 
-authors:
-  - name: Myeongjun Lee
-    url: "https://github.com/mjlee5982"
-    affiliations:
-      name: POHANG, POSTECH
+# Anonymize when submitting
+ authors:
+   - name: Anonymous
+
+# authors:
+#  - name: Myeongjun Lee
+#    url: "https://github.com/mjlee5982"
+#    affiliations:
+#      name: POHANG, POSTECH
 
 # must be the exact same name as your blogpost
 bibliography: 2025-05-30-rethinking-quantization-for-the-real-world.bib
