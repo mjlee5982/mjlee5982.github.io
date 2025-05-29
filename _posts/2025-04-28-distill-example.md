@@ -18,7 +18,7 @@ authors:
 #      name: 
 
 # must be the exact same name as your blogpost
-bibliography: 2025-05-30-rethinking-quantization-for-the-real-world.bib
+bibliography: 2025-04-28-distill-example.bib
 
 # Add a table of contents to your post.
 #   - make sure that TOC names match the actual section names
