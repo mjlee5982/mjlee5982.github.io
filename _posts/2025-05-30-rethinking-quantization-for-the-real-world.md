@@ -125,7 +125,7 @@ The experimental setup was designed for ease of reproducibility and to provide a
 
 ### 3.1 Are Traditional Evaluation Methods Applicable? 
 Given that traditional quantization techniques have been developed and validated on balanced and well-structured datasets, we questioned whether existing evaluation metrics remain effective when applied to models trained on LTD datasets.
-Standard accuracy, commonly used as a performance metric for CNN-based image classification tasks, proved inadequate for evaluating models trained on LTD datasets. We generated CIFAR10-LT datasets with imbalance factors of 10, 50, and 100. In addition to the overall accuracy (Acc(Norm)), we separately measured accuracy for head classes (approximately 80% of data) and tail classes (remaining 20%). The results revealed that Acc(Norm) failed to reflect performance accurately for head (Acc(Head)) and tail (Acc(Tail)) classes, particularly as imbalance factors increased. This demonstrates the necessity of evaluating head and tail classes separately in LTD scenarios. 
+Normalized overall accuracy, commonly used as a performance metric for CNN-based image classification tasks, proved inadequate for evaluating models trained on LTD datasets. We generated CIFAR10-LT datasets with imbalance factors of 0.1(the number of image gap between head and tail is 10 times), 0.02, and 0.01. In addition to the overall accuracy (Acc(Norm)), we separately measured accuracy for head classes (approximately 80% of data) and tail classes (remaining 20%). The results revealed that Acc(Norm) failed to reflect performance accurately for head (Acc(Head)) and tail (Acc(Tail)) classes, particularly as imbalance factors increased. This demonstrates the necessity of evaluating head and tail classes separately in LTD scenarios. 
 
 <div class="row mt-3">
     {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig5.jpg" class="img-fluid" %}
@@ -138,7 +138,7 @@ Standard accuracy, commonly used as a performance metric for CNN-based image cla
 
 ### 3.2 Can Effective Training Methods Address LTD Issues? 
 Several methodologies have been proposed to tackle LTD datasets commonly found in real-world scenarios. Prominent methods include data-level solutions like re-sampling to balance head and tail classes, cost-sensitive learning to adjust class-specific loss during training, and transfer learning methods to leverage information from head classes to enhance tail class performance.
-The Decoupling Representation and Classifier method, presented at ICLR 2020, demonstrated substantial performance improvements on LTD datasets by training representations (feature extractors) using instance-balanced sampling and separately retraining classifiers using class-balanced sampling. Using this method, we confirmed substantial performance improvements on CIFAR10-LT with imbalance factors of 10, 50, and 100. The improvement was more significant with higher imbalance factors, effectively narrowing the performance gap between head and tail classes compared to baseline methods. However, despite notable improvements, data imbalance persisted, especially evident at an imbalance factor of 100, where the accuracy gap between head and tail exceeded 10%. This indicates that while techniques like Decoupling Learning substantially mitigate data imbalance, significant imbalance still poses challenges.
+The Decoupling Representation and Classifier method, presented at ICLR 2020, demonstrated substantial performance improvements on LTD datasets by training representations (feature extractors) using instance-balanced sampling and separately retraining classifiers using class-balanced sampling. Using this method, we confirmed substantial performance improvements on CIFAR10-LT with imbalance factors of 0.1, 0.02, and 0.01. The improvement was more significant with higher imbalance factors, effectively narrowing the performance gap between head and tail classes compared to baseline methods. However, despite notable improvements, data imbalance persisted, especially evident at an imbalance factor of 0.01, where the accuracy gap between head and tail exceeded 10%. This indicates that while techniques like Decoupling Learning substantially mitigate data imbalance, significant imbalance still poses challenges.
 
 <div class="row mt-3">
     {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/table1.jpg" class="img-fluid" %}
@@ -151,7 +151,7 @@ The Decoupling Representation and Classifier method, presented at ICLR 2020, dem
     {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig6.jpg" class="img-fluid" %}
 </div>
 <div class="caption">
-    Figure 6: Performance Changes of Head and Tail Classes due to Decoupling Learning.
+    Figure 6: Accuracy Changes of Head and Tail Classes due to Decoupling Learning.
     Decoupling learning improves performance imbalance caused by LTD. However, a residual imbalance in model performance persists when the imbalance factor is above 0.01.
 </div>
 
@@ -178,7 +178,7 @@ Previous experiments revealed that CNN models trained on LTD datasets exhibited 
 
 ### 3.4 Can Quantization Processes Mitigate Real-World LTD Issues?
 Considering the prevalence of LTD datasets across various real-world applications, and acknowledging that sampling and training techniques such as Decoupling Learning cannot entirely resolve performance disparities between head and tail classes, we explored whether the quantization process itself could further mitigate these disparities. Is there a simpler and more efficient way to reduce tail class performance degradation during quantization without extensive retraining?
-Our experimental results offer a clear answer: Mixed Precision Quantization (MPQ) can indeed partially address tail class performance issues during quantization. MPQ evaluates bit-width sensitivity for each layer, allowing varied bit-width assignments based on sensitivity. By incorporating tail class performance metrics into sensitivity evaluations, we developed a data imbalance-aware MPQ. This approach significantly improved tail class performance without additional training overhead associated with post-training quantization (PTQ). Compared to uniform quantization, this imbalance-aware MPQ showed negligible overall accuracy degradation while effectively reducing the performance gap between head and tail classes during the quantization process.
+Our experimental results offer a clear answer: Mixed Precision Quantization (MPQ) can indeed partially address tail class performance issues during quantization. We propose repurposing the existing Mixed Precision Quantization (MPQ) technique, originally designed to improve computational cost and energy efficiency, as a novel approach to address data imbalance issues that arise during the LTD based model compression process. In case of MPQ, to assign appropriate bit-widths to each layer, sensitivity analysis is required. In our approach, we incorporate tail-class performance indicators into the analysis, guiding the model to reduce its overemphasis on head classes and instead improve the performance on tail classes, effectively driving compression in a more balanced direction. This approach significantly improved tail class performance without additional training overhead associated with post-training quantization (PTQ). Compared to uniform quantization, this imbalance-aware MPQ showed negligible overall accuracy degradation while effectively reducing the performance gap between head and tail classes during the quantization process.
 
 <div class="row mt-3">
     {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/table2.jpg" class="img-fluid" %}
@@ -189,25 +189,33 @@ Our experimental results offer a clear answer: Mixed Precision Quantization (MPQ
 </div>
 
 <div class="row mt-3">
-    {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig9.jpg" class="img-fluid" %}
+    {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig9_new.jpg" class="img-fluid" %}
 </div>
 <div class="caption">
-    Figure 9: VGG16 Layer-wise Sensitivity Rank (Top 9) for MPQ Application.
+    Figure 9: Rank Changes Based on Tail Performance (Top 9).
     Rank changes between sensitivity evaluations based on Normal Accuracy and Tail class Accuracy were observed, suggesting that MPQ can be effectively tailored to enhance tail class performance.
 </div>
 
 <div class="row mt-3">
-    {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig10.jpg" class="img-fluid" %}
+    {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig10_new.jpg" class="img-fluid" %}
 </div>
 <div class="caption">
     Figure 10: Class-wise Performance of MPQ Applied Model for Tail Class Improvement.
     Performance reduction in head classes (Class 0~3) and performance improvement in tail classes (Class 4~9) confirm that MPQ effectively mitigates performance disparities caused by data imbalance.
 </div>
 
+<div class="row mt-3">
+    {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig11.jpg" class="img-fluid" %}
+</div>
+<div class="caption">
+    Figure 11: Layer-wise Sensitivity Analysis Considering Data Imbalance.
+</div>
+
+
 
 ## 4.Conclusion
 ### 4.1 What problem is this work trying to tackle?
-This research seeks solutions from the perspective of Application-Driven Machine Learning to address Long Tail Distribution (LTD), a common real-world problem, specifically through the lens of model quantization. We experimentally explored the effects of data imbalance in LTD datasets on the conventional Decoupling Learning method and model quantization. Furthermore, we propose a method to resolve data imbalance using Mixed Precision Quantization (MPQ) at the quantization stage, rather than relying solely on data sampling or model training.
+This research seeks solutions from the perspective of Application-Driven Machine Learning to address Long Tail Distribution (LTD), a common real-world problem, specifically through the application of model quantization. We experimentally explored the effects of data imbalance in LTD datasets on the conventional Decoupling Learning method and model quantization. Furthermore, we propose a method to resolve data imbalance using Mixed Precision Quantization (MPQ) at the quantization stage, rather than relying solely on data sampling or model training.
 
 ### 4.2 That contributions did this work make, and what impact should this work have?
 By exploring and proposing methods to overcome LTD problems at the quantization stage rather than during data sampling or model training, this work is expected to inspire future research aimed at addressing data imbalance issues during the model compression phase. Using CIFAR10-LT datasets and the VGG16 model, we conducted experiments that are relatively straightforward to reproduce and provided several significant results:
@@ -221,6 +229,8 @@ While existing research primarily focuses on data sampling and training methods 
 
 ### 4.4 what are the limitations of this work? 
 Despite showing meaningful experimental results, the study is currently limited to the CIFAR10-LT dataset and a single VGG16 model. To generalize these findings more broadly, it will be necessary to expand experiments to include additional datasets and models.
+
+
 
 
 
