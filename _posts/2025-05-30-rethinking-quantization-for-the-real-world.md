@@ -5,7 +5,7 @@ description: This blog post highlights the fact that most existing quantization 
 date: 2025-05-30
 future: true
 htmlwidgets: true
-hidden: true
+hidden: false
 
 # Anonymize when submitting
 authors:
