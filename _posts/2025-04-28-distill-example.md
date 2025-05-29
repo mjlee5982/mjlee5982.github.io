@@ -2,7 +2,7 @@
 layout: distill
 title: Rethinking Quantization for the Real World
 description: This blog post highlights the fact that most existing quantization techniques have been developed and validated under clean, balanced benchmark settings. It critically examines whether these methods can be reliably applied in real-world environments, where data imbalance and custom evaluation metrics constraints are the norm. Furthermore, it proposes ideas for partially mitigating the impact of real-world data imbalance during the Mixed Precision Quantization (MPQ) process.
-date: 2025-05-30
+date: 2025-04-28
 future: true
 htmlwidgets: true
 hidden: true
