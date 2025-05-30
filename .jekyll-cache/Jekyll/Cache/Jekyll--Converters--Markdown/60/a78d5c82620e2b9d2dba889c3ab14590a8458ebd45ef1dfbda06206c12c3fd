@@ -1,4 +1,4 @@
-I"¿^<h2 id="anthropomorphic-ai-system-behaviors-are-prevalent-yet-understudied">Anthropomorphic AI System Behaviors Are Prevalent Yet Understudied</h2>
+I"ò^<h2 id="anthropomorphic-ai-system-behaviors-are-prevalent-yet-understudied">Anthropomorphic AI System Behaviors Are Prevalent Yet Understudied</h2>
 
 <p>In his 1985 lecture, Edsger Dijkstra lamented that anthropomorphism was rampant in computing science, with many of his colleagues perhaps not realizing how pernicious it was, and that <em>‚Äú[i]t is not only the [computing] industry that suffers, so does the science‚Äù</em> <d-cite key="dijkstra1985anthropomorphism"></d-cite>.
 Indeed, anthropomorphism in how we talk about computing systems shapes how people understand and interact with AI and other computing systems <d-cite key="cheng-etal-2024-anthroscore,nass1994computers,reeves1996media"></d-cite>, and is thus at the core of understanding the impacts of these systems on individuals, communities, and society.
@@ -28,13 +28,13 @@ or devaluing social interactions <d-cite key="akbulut2024all,madianou2021nonhuma
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-anthropomorphic-ai/key_components-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-anthropomorphic-ai/key_components-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-anthropomorphic-ai/key_components-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-anthropomorphic-ai/key_components-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-anthropomorphic-ai/key_components-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-anthropomorphic-ai/key_components-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-anthropomorphic-ai/key_components.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-anthropomorphic-ai/key_components.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -60,13 +60,13 @@ system outputs that include suggestions that a system has a human-like identity 
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-anthropomorphic-ai/quotes-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-anthropomorphic-ai/quotes-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-anthropomorphic-ai/quotes-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-anthropomorphic-ai/quotes-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-anthropomorphic-ai/quotes-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-anthropomorphic-ai/quotes-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-anthropomorphic-ai/quotes.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-anthropomorphic-ai/quotes.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 

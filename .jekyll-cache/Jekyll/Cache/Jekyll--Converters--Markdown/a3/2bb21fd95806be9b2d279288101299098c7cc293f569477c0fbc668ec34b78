@@ -1,4 +1,4 @@
-I"c<h2 id="introduction">Introduction</h2>
+I"#<h2 id="introduction">Introduction</h2>
 
 <p>Differential privacy (DP) is a powerful mathematical framework that allows us to reason about privacy in any process that takes input data and produces some output. Whether we’re computing simple statistics, training machine learning models, or generating synthetic data, DP provides quantifiable privacy guarantees by carefully introducing randomness into our computations.</p>
 
@@ -101,13 +101,13 @@ with support \(\mathbb{R}\cup\{\infty\}\) and where \(O\) is drawn according to 
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/first_salary_plot.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -165,13 +165,13 @@ This then allows us to prove the \((\varepsilon, \delta)\) guarantee by <strong>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/three_sigma.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -249,13 +249,13 @@ and so on.</li>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/composition.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -294,13 +294,13 @@ and so on.</li>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_cdf.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -312,13 +312,13 @@ and so on.</li>
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/gradients_hist.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -337,13 +337,13 @@ Plots to illustrate the gradient norm distribution for training without DP.
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/simple_training_acc_loss.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -362,13 +362,13 @@ Loss and accuracy curves for training without DP, starts indicate locations of s
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_sigma.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -384,13 +384,13 @@ Loss and accuracy curves for training without DP, starts indicate locations of s
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/advanced_comp_training.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -448,13 +448,13 @@ Loss and accuracy curves for training without DP, starts indicate locations of s
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_sigma.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -471,13 +471,13 @@ Loss and accuracy curves for training without DP, starts indicate locations of s
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/rdp_comp_training.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -525,13 +525,13 @@ Loss and accuracy curves for training without DP, starts indicate locations of s
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsampled_rdp_comp.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -549,13 +549,13 @@ Loss and accuracy curves for training without DP, starts indicate locations of s
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/subsample_training.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -677,13 +677,13 @@ Now consider an alternative scheme where  \(z_1 = -z_2\), then
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/matrix_structure.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -702,13 +702,13 @@ Raw values for the matrices $A$, $B$ and $C$. Figure generated from the code and
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/distribution_c_inv.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -729,13 +729,13 @@ Raw values for the matrices $A$, $B$ and $C$. Figure generated from the code and
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/noise_acc.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -756,13 +756,13 @@ Raw values for the matrices $A$, $B$ and $C$. Figure generated from the code and
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-building-blocks-of-differentially-private-training/mat_fact_train.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 

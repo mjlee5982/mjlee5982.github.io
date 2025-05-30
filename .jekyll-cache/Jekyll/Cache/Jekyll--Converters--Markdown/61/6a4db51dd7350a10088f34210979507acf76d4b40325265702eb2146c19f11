@@ -1,4 +1,4 @@
-I"¼
+I"þ
 <!-- preamble -->
 <div class="preamble">
 $$
@@ -71,13 +71,13 @@ When minimizing with respect to \(\theta\) the first term of the right hand side
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward.svg" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture><figcaption class="caption">Modern generative modelling principle: trying to find a map \(T\) that sends the base distribution \(p_0\) as close as possible to the data distribution \(p_{\mathrm{data}}\).</figcaption>
 
@@ -120,13 +120,13 @@ Let \(x_0 \sim p_0\) and \(x_{k} = \phi_k(x_{k-1})\) for \(k\in\{1, \ldots, K\}\
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross.png" class="img-fluid invert" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/normalizing_flow_cross.png" class="img-fluid invert" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture><figcaption class="caption">Normalizing flow with \(K=4\), transforming an isotropic Gaussian (leftmost) to a cross shape target distribution (rightmost). Picture from <d-cite key="papamakarios2021normalizing" /></figcaption>
 
@@ -179,7 +179,7 @@ If we return to the planar normalizing flow, by letting \(u_{k-1}(\cdot) \overse
 we can rewrite the relationship between \(x_{k}\) and \(x_{k-1}\) as:</p>
 
 <figure class="sidebar" style="--w: 200; --h: 320;">
-  <iframe style="--h: 200" src="/2025/assets/html/2025-04-28-conditional-flow-matching/ot-flow-1d.html#loop1" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--h: 200" src="/assets/html/2025-04-28-conditional-flow-matching/ot-flow-1d.html#loop1" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">From a direct mapping, to finer and finer time discretizations, to a continuous-time mapping.</figcaption>
 </figure>
 
@@ -222,7 +222,7 @@ For a field \(u\) regular enough such that the initial value problem has a uniqu
 </span></d-footnote>.</p>
 
 <figure>
-  <img class="invert" style="height: 250px" src="/2025/assets/img/2025-04-28-conditional-flow-matching/trifecta.svg" frameborder="0" scrolling="no" />
+  <img class="invert" style="height: 250px" src="/assets/img/2025-04-28-conditional-flow-matching/trifecta.svg" frameborder="0" scrolling="no" />
   <figcaption class="caption">
   Link between the probability path, the velocity field and the flow.
   </figcaption>
@@ -233,7 +233,7 @@ They do so by learning the velocity field \(u\) as \(u_\theta: \mathbb{R}^d \tim
 Sampling is then achieved by solving the initial value problem \eqref{eq:initial_value_pb} with \(x_0\) sampled from the base distribution \(p_0\).</p>
 
 <figure class="sidebar" style="--w: 200; --h: 420;">
-  <video class="invert" style="width: 100%; height: auto; object-fit: cover; border: none;" autoplay="" loop="" muted="" onclick="this.controls = true" src="/2025/assets/img/2025-04-28-conditional-flow-matching/traj.mp4">
+  <video class="invert" style="width: 100%; height: auto; object-fit: cover; border: none;" autoplay="" loop="" muted="" onclick="this.controls = true" src="/assets/img/2025-04-28-conditional-flow-matching/traj.mp4">
   </video>
   <!-- <figcaption class="caption">
      <d-cite key="grathwohl2018ffjord">
@@ -310,7 +310,7 @@ integrating \eqref{eq:ce_logptxt}:</p>
 
 <!--
 <figure class="" style="--w: 200; --h: 420;" >
-<img src="/2025/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward_continuous_reverse.svg"/>
+<img src="/assets/img/2025-04-28-conditional-flow-matching/T_theta_pushforward_continuous_reverse.svg"/>
 <figcaption>
 Solving the ODE in reverse gives the antecedant of a point \(x^{(i)}\), necessary to compute its likelihood and thus the loss.
 </figcaption>
@@ -329,9 +329,9 @@ While the first part gives interesting background on normalizing flows, it is no
 
 <figure>
   <div class="l-page" style="--ar: calc(218 / 161)">
-    <iframe style="aspect-ratio: 1; width: calc(100% / ( 1 + 2 * var(--ar)));" src="/2025/assets/html/2025-04-28-conditional-flow-matching/ot-flow-1d.html#loop9" frameborder="0" scrolling="no"></iframe>
-    <img style="vertical-align: top; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="/2025/assets/img/2025-04-28-conditional-flow-matching/pbackground.svg" />
-    <iframe style="aspect-ratio: var(--ar); margin: 0 -5px; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="/2025/assets/html/2025-04-28-conditional-flow-matching/u-anim.html" frameborder="0" scrolling="no"></iframe>
+    <iframe style="aspect-ratio: 1; width: calc(100% / ( 1 + 2 * var(--ar)));" src="/assets/html/2025-04-28-conditional-flow-matching/ot-flow-1d.html#loop9" frameborder="0" scrolling="no"></iframe>
+    <img style="vertical-align: top; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="/assets/img/2025-04-28-conditional-flow-matching/pbackground.svg" />
+    <iframe style="aspect-ratio: var(--ar); margin: 0 -5px; width: calc(100% * var(--ar) / ( 1 + 2 * var(--ar)));" src="/assets/html/2025-04-28-conditional-flow-matching/u-anim.html" frameborder="0" scrolling="no"></iframe>
   </div>
   <figcaption class="caption">
     <p>Three types of visuals used in this blog post.</p>
@@ -365,7 +365,7 @@ The distribution of these samples corresponds to \(\p\).</li>
 <h3 id="intuition-of-conditional-flow-matching">Intuition of Conditional Flow Matching</h3>
 
 <figure class="sidebar is-right" style="--w: 200; --h: 300;">
-  <iframe style="--h: 147" src="/2025/assets/html/2025-04-28-conditional-flow-matching/u-anim.html" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--h: 147" src="/assets/html/2025-04-28-conditional-flow-matching/u-anim.html" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">
   Generation of samples from \(p_1\) can be done by sampling from \(p_0\) and then following the velocity field \(\utheta\).
   </figcaption>
@@ -376,7 +376,7 @@ It is illustrated in <span class="ref-lastfig">FigureÂ </span>.
 The <em>particularity of CFM</em> is how the velocity field is learned, as we will detail below.</p>
 
 <figure class="sidebar" style="--w: 200; --h: 320;">
-  <iframe style="--h: 200" src="/2025/assets/html/2025-04-28-conditional-flow-matching/ot-flow-1d.html#loop3" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--h: 200" src="/assets/html/2025-04-28-conditional-flow-matching/ot-flow-1d.html#loop3" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">
   An infinite number of probability paths \((p_t)_{t \in [0,1]}\) that transforms \(p_0\) in \(\pdata\).
   </figcaption>
@@ -443,8 +443,8 @@ Similarly \(\pcond = p(x,t|z)\).</p>
 
   <figure class="">
   <div style="--r: calc(1250 / (1250 + 400)); display: flex; align-items: end; margin-right: -15px; margin-left: -15px;">
-    <img style="width: calc(100% * var(--r))" src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_pcondxt_representers.svg" />
-    <video style="width: calc(100% * (1 - var(--r)));border-left:1px solid black" autoplay="" loop="" onclick="this.controls = true" src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_accumulate_pcond.mp4" frameborder="0" scrolling="no"></video>
+    <img style="width: calc(100% * var(--r))" src="/assets/img/2025-04-28-conditional-flow-matching/a/a_pcondxt_representers.svg" />
+    <video style="width: calc(100% * (1 - var(--r)));border-left:1px solid black" autoplay="" loop="" onclick="this.controls = true" src="/assets/img/2025-04-28-conditional-flow-matching/a/a_accumulate_pcond.mp4" frameborder="0" scrolling="no"></video>
   </div>
   <figcaption class="caption">
       <p>Conditional probability paths as linear interpolation.<br />
@@ -489,8 +489,8 @@ p(x | t, z=x_1)
 
   <figure class="">
   <div style="--r: calc(1250 / (1250 + 400)); display: flex; align-items: end; margin-right: -15px; margin-left: -15px;">
-    <img style="width: calc(100% * var(--r))" src="/2025/assets/img/2025-04-28-conditional-flow-matching/l/l_pcondxt_representers.svg" />
-    <video style="width: calc(100% * (1 - var(--r)));border-left:1px solid black" autoplay="" loop="" onclick="this.controls = true" src="/2025/assets/img/2025-04-28-conditional-flow-matching/l/l_accumulate_pcond.mp4" frameborder="0" scrolling="no"></video>
+    <img style="width: calc(100% * var(--r))" src="/assets/img/2025-04-28-conditional-flow-matching/l/l_pcondxt_representers.svg" />
+    <video style="width: calc(100% * (1 - var(--r)));border-left:1px solid black" autoplay="" loop="" onclick="this.controls = true" src="/assets/img/2025-04-28-conditional-flow-matching/l/l_accumulate_pcond.mp4" frameborder="0" scrolling="no"></video>
   </div>
   <figcaption class="caption">
       <p>Conditional probability paths as shrinking conical Gaussians.<br />
@@ -572,16 +572,16 @@ The marginalization of \(\pcond\) directly yields a (intractable) closed-form fo
   <div class="grid-custom1" style="">
     <span class="" style="grid-column: 1 / span 3">$$p(x,t|z=z^{(i)})$$</span>
     <span style="grid-column: 5">$$p(x,t)$$</span>
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_pcond_0.svg" />
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_pcond_1.svg" />
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_pcond_2.svg" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/a/a_pcond_0.svg" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/a/a_pcond_1.svg" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/a/a_pcond_2.svg" />
     <div style="font-size: 3em;">â‡’</div>
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_ptot.svg" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/a/a_ptot.svg" />
     <span class="" style="grid-column: 1 / span 3">$$\ucondzi$$</span>
     <span style="grid-column: 5"></span>
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_ucond_0.svg" />
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_ucond_1.svg" />
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/a/a_ucond_2.svg" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/a/a_ucond_0.svg" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/a/a_ucond_1.svg" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/a/a_ucond_2.svg" />
     <div style="font-size: 3em;">â‡’</div>
     <div style="font-size: 6em;">?</div>
   </div>
@@ -605,13 +605,13 @@ The relationship between \(\p\), \(\pcond\), \(u\), \(\ucond\) is illustrated in
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg" class="img-fluid invert" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-conditional-flow-matching/cfm_uncond_to_cond.svg" class="img-fluid invert" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture><figcaption class="caption">For any conditioning variable \(z\), Theorem 1 provides an (intractable) closed-form formula for the unknown velocity field \(u(x ,t)\) as a function of conditional velocity fields \( \ucond \).</figcaption>
 
@@ -638,7 +638,7 @@ recall that \(p(x, t)\) is defined as \(\int_z p(x, t | z)\), i.e., by marginali
 <figure class="sidebar" style="--w: 200; --h: 420;">
   <div style="position: absolute; left: -1.3em; top: calc(25% - 1em);">$$x$$</div>
   <div style="position: absolute; top: 35%; left: calc(50% - 0.3em);">$$t$$</div>
-  <iframe style="--h: 200;" class="invert" src="/2025/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter1" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--h: 200;" class="invert" src="/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter1" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">Move your mouse at any location \((t, x)\) to see a sampling of \(z | t, x\) (i.e., trajectories between \(x_0\) and \(x_1\) that pass close to \((t,x)\)) and the associated velocity (average of the directions of trajectories)</figcaption>
 </figure>
 
@@ -884,7 +884,7 @@ In what precedes we have chosen to use \(p(z = (x_0, x_1)) = p_0 \times p_\mathr
   <figure class="sidebar" style="--w: 200; --h: 420;">
   <div style="position: absolute; left: -1.3em; top: calc(25% - 1em);">$$x$$</div>
   <div style="position: absolute; top: 35%; left: calc(50% - 0.3em);">$$t$$</div>
-  <iframe style="--h: 200;" class="invert" src="/2025/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter1" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--h: 200;" class="invert" src="/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter1" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">Move your mouse at any location \((t, x)\) to see a sampling of \(z | t, x\) (i.e. trajectories between \(x_0\) and \(x_1\) that pass close to \((t,x)\)) and the associated flow direction (average of the directions of trajectories)</figcaption>
 </figure>
 
@@ -898,7 +898,7 @@ This is  the approach originally proposed by <d-cite key="liu2023flow"></d-cite>
   <figure class="sidebar is-right" style="--w: 200; --h: 350;">
   <div style="position: absolute; left: -1.3em; top: calc(25% - 1em);">$$x$$</div>
   <div style="position: absolute; top: 45%; left: calc(50% - 0.3em);">$$t$$</div>
-  <iframe style="--h: 200;" class="invert" src="/2025/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter2" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--h: 200;" class="invert" src="/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter2" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">(Move your mouse at any location \((t, x)\)) Same as <span class="fig-pop"></span><span class="ref-lastfig">Fig. </span><span class="fig-push"></span> but with minibatch optimal transport coupling.</figcaption>
 </figure>
 
@@ -919,7 +919,7 @@ This approach can be formalized by setting the conditioning variable \(z\) as a 
     <video class="invert" style="
         width: 100%;  /* Adjust this value for smaller video size */
         background: none;  /* Transparent background */
-    " autoplay="" loop="" muted="" onclick="this.controls = true" src="/2025/assets/img/2025-04-28-conditional-flow-matching/ot_euler_2.mp4">
+    " autoplay="" loop="" muted="" onclick="this.controls = true" src="/assets/img/2025-04-28-conditional-flow-matching/ot_euler_2.mp4">
     </video>
   </div>
   <caption class="caption">
@@ -1003,7 +1003,7 @@ The target probability path in the Conditional Flow Matching loss corresponds to
   <figure class="sidebar is-right" style="--w: 200; --h: 420;">
   <div style="position: absolute; left: -1.3em; top: calc(25% - 1em);">$$x$$</div>
   <div style="position: absolute; top: 35%; left: calc(50% - 0.3em);">$$t$$</div>
-  <iframe style="--h: 200;" class="invert" src="/2025/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter3" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--h: 200;" class="invert" src="/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#inter3" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">Case of diffusion paths. Move your mouse at any location \((t, x)\) to see a sampling of \(z | t, x\) (i.e. trajectories between \(x_0\) and \(x_1\) that pass close to \((t,x)\)) and the associated flow direction (average of the directions of trajectories)</figcaption>
 </figure>
 
@@ -1067,7 +1067,7 @@ The target probability path in the Conditional Flow Matching loss corresponds to
 </script>
 
 <figure class="">
-  <iframe style="--w: 800; --h: 600; width: 100%; background: white;" class="invert" src="/2025/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#playground" frameborder="0" scrolling="no"></iframe>
+  <iframe style="--w: 800; --h: 600; width: 100%; background: white;" class="invert" src="/assets/html/2025-04-28-conditional-flow-matching/cfm-1d.html#playground" frameborder="0" scrolling="no"></iframe>
   <figcaption class="caption">A playground to explore a variety of CFM settings.</figcaption>
 </figure>
 :ET

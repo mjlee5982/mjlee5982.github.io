@@ -1,4 +1,4 @@
-I"	²<h1 id="viewing-images-in-frequency-domain">Viewing Images in Frequency Domain</h1>
+I"i±<h1 id="viewing-images-in-frequency-domain">Viewing Images in Frequency Domain</h1>
 
 <p>While we typically view images in the spatial domainâ€”where every pixel directly represents brightness or colorâ€”another compelling perspective is to examine them in the frequency domain. By applying the 2D Discrete Fourier Transform (DFT)<d-footnote>checkout <a href="https://github.com/Inspiaaa/2D-DFT-Visualisation" target="_blank">this</a> nice demo</d-footnote> <d-cite key="schwarz2021frequencybiasgenerativemodels"> </d-cite>, we can break down an image into its frequency components, revealing hidden structures and patterns that arenâ€™t as apparent in the spatial view. A 2D discrete fourier transform maps a grayscale image $I \in \mathbb{R}^{H \times W}$ to the frequency domain as follows :</p>
 
@@ -10,13 +10,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/baboon_spectrum.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -36,13 +36,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/reduced_spectrum.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -66,13 +66,13 @@ Since images are discretized in space, the maximum frequency is determined by th
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/aliasing.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -96,13 +96,13 @@ Since images are discretized in space, the maximum frequency is determined by th
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/CNN_Image.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -294,13 +294,13 @@ V &amp; =\sum_{\hat{u}, \hat{v}} \operatorname{Sinc}(\hat{u}, \hat{v}) \cdot \ma
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response.png" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Filter_Response.png" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -322,13 +322,13 @@ V &amp; =\sum_{\hat{u}, \hat{v}} \operatorname{Sinc}(\hat{u}, \hat{v}) \cdot \ma
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectral_den_diff.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -413,13 +413,13 @@ Hence,
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/spectrum_syn.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -441,13 +441,13 @@ Hence,
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analysing-the-spectral-biases-in-generative-models/Spectral_diffusion.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 

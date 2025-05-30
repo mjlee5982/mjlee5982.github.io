@@ -1,4 +1,4 @@
-I"B<h2 id="introduction">Introduction</h2>
+I"�A<h2 id="introduction">Introduction</h2>
 
 <p>At EMNLP 2024, the <a href="https://x.com/emnlpmeeting/status/1857176180128198695/photo/1">Best Paper Award</a> was given to <strong>“Pretraining Data Detection for Large Language Models: A Divergence-based Calibration Method”</strong><d-cite key="zhang2024pretraining"></d-cite>. The paper addresses Membership Inference Attacks (MIAs), a key issue in machine learning related to privacy. The authors propose a new calibration method and introduce <strong>PatentMIA</strong>, a benchmark utilizing temporally shifted patent data to validate their approach. The method recalibrates model probabilities using a divergence metric between the outputs of a target model and a token-frequency map (basically a histogram) derived from auxiliary data, claiming improved detection of member and non-member samples.</p>
 
@@ -33,10 +33,10 @@
     -->
     
       
-        <source class="responsive-img-srcset" srcset="/2025/assets/img/2025-04-28-calibrated-mia/groundhog.avif" sizes="95vw" />
+        <source class="responsive-img-srcset" srcset="/assets/img/2025-04-28-calibrated-mia/groundhog.avif" sizes="95vw" />
       
     
-    <img src="/2025/assets/img/2025-04-28-calibrated-mia/groundhog.avif" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-calibrated-mia/groundhog.avif" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
   </picture>
 
   
@@ -56,10 +56,10 @@
     -->
     
       
-        <source class="responsive-img-srcset" srcset="/2025/assets/img/2025-04-28-calibrated-mia/squirrel-480.webp 480w,/2025/assets/img/2025-04-28-calibrated-mia/squirrel-800.webp 800w,/2025/assets/img/2025-04-28-calibrated-mia/squirrel-1400.webp 1400w," type="image/webp" sizes="95vw" />
+        <source class="responsive-img-srcset" srcset="/assets/img/2025-04-28-calibrated-mia/squirrel-480.webp 480w,/assets/img/2025-04-28-calibrated-mia/squirrel-800.webp 800w,/assets/img/2025-04-28-calibrated-mia/squirrel-1400.webp 1400w," type="image/webp" sizes="95vw" />
       
     
-    <img src="/2025/assets/img/2025-04-28-calibrated-mia/squirrel.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-calibrated-mia/squirrel.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
   </picture>
 
   
@@ -79,10 +79,10 @@
     -->
     
       
-        <source class="responsive-img-srcset" srcset="/2025/assets/img/2025-04-28-calibrated-mia/llama.webp" sizes="95vw" />
+        <source class="responsive-img-srcset" srcset="/assets/img/2025-04-28-calibrated-mia/llama.webp" sizes="95vw" />
       
     
-    <img src="/2025/assets/img/2025-04-28-calibrated-mia/llama.webp" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-calibrated-mia/llama.webp" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
   </picture>
 
   

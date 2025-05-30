@@ -1,4 +1,4 @@
-I"}à<h2 id="background">Background</h2>
+I"Aà<h2 id="background">Background</h2>
 
 <p>The dynamics of learning in artificial neural networks capture how the parameters of a network change over time during training as a function of the data, architecture, and training algorithm. 
 The internal representations and external behaviors of the network evolve during training as a consequence of these dynamics.
@@ -508,13 +508,13 @@ with numerical simulations of training the full student network with standard mi
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_saad_solla.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -536,13 +536,13 @@ the student network has a size of K = 4 or larger, since the student is "realiza
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analytical-simulated-dynamics/fixed_teacher_student_base_goldt.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
@@ -567,13 +567,13 @@ Small-magnitude drops can be seen in the alignment when the loss function is ste
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights-480.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights-800.webp" />
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights-1400.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights-480.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights-800.webp" />
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights-1400.webp" />
     
 
     <!-- Fallback to the original file -->
-    <img src="/2025/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+    <img src="/assets/img/2025-04-28-analytical-simulated-dynamics/varying_weights.png" class="img-fluid" width="auto" height="auto" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 
   </picture>
 
