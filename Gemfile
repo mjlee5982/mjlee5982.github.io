@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+
+gem 'execjs'
+gem 'mini_racer'
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
