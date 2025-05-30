@@ -267,10 +267,10 @@ An ELO difference of 44 on the LMSys leaderboard allows for a significant amount
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% twitter https://x.com/OriolVinyalsML/status/1859680434256502994 %}
+       # {% twitter https://x.com/OriolVinyalsML/status/1859680434256502994 %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% twitter https://x.com/YileiQian/status/1859336584115651050 %}
+       # {% twitter https://x.com/YileiQian/status/1859336584115651050 %}
     </div>
 </div>
 
