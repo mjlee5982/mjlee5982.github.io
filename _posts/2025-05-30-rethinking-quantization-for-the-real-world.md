@@ -85,7 +85,7 @@ Application-Driven Machine Learning (ADML) is an approach to machine learning re
 
 
 ### 2.2 Long Tail Distribution (LTD)
-Long-tail distribution (LTD) describes a scenario where a small number of classes dominate the dataset (head classes), while the majority of classes have significantly fewer samples (tail classes) <d-cite key="kang2020decoupling"></d-cite>. Such distributions are ubiquitous in real-world datasets like iNaturalist (biodiversity data), ImageNet-LT, and Places-LT, where many categories are represented by very few examples. LTD poses substantial challenges for machine learning models, which tend to overfit on head classes while underperforming on tail classes due to insufficient exposure during training. Consequently, the overall accuracy metric often masks severe performance degradation on rare classes, making standard evaluation metrics unreliable indicators of true model effectiveness. Addressing LTD requires strategies such as data re-sampling, class-balanced losses, and specialized evaluation protocols that better reflect performance across all classes, ensuring equitable attention to rare but potentially critical categories.
+Long-tail distribution (LTD) describes a scenario where a small number of classes dominate the dataset (head classes), while the majority of classes have significantly fewer samples (tail classes) <d-cite key="kang2020decoupling"></d-cite>. Such distributions are ubiquitous in real-world datasets like iNaturalist (biodiversity data), ImageNet-LT, and Places-LT, where many categories are represented by very few examples. LTD poses substantial challenges for machine learning models, which tend to overfit on head classes while underperforming on tail classes due to insufficient exposure during training <d-cite key="suhee2022long"></d-cite>. Consequently, the overall accuracy metric often masks severe performance degradation on rare classes, making standard evaluation metrics unreliable indicators of true model effectiveness. Addressing LTD requires strategies such as data re-sampling, class-balanced losses, and specialized evaluation protocols that better reflect performance across all classes, ensuring equitable attention to rare but potentially critical categories.
 
 <div class="row mt-3">
     {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig2.jpg" class="img-fluid" %}
@@ -102,7 +102,7 @@ The concept of "Decoupling Representation and Classifier" for long-tailed recogn
     {% include figure.html path="assets/img/2025-05-30-rethinking-quantization-for-the-real-world/fig3.jpg" class="img-fluid" %}
 </div>
 <div class="caption">
-    Figure 3: Decoupling representation and classifier for long-tailed recognition.
+    Figure 3: Decoupling representation and classifier for long-tailed recognition <d-cite key="suhee2022long"></d-cite>.
     In Stage 1, feature extraction and the downstream task are simultaneously trained using an imbalanced dataset. In Stage 2, only the downstream task is separately trained.
 </div>
 
