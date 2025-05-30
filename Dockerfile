@@ -1,0 +1,32 @@
+FROM ruby:latest
+
+RUN apt-get update -y && \
+    apt-get install -y --no-install-recommends \
+    locales imagemagick build-essential zlib1g-dev libv8-dev \
+    python3 jupyter-nbconvert inotify-tools procps curl && \
+    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
+
+ENV LANG=en_US.UTF-8 \
+    LANGUAGE=en_US:en \
+    LC_ALL=en_US.UTF-8 \
+    JEKYLL_ENV=production
+
+RUN mkdir /srv/jekyll
+ADD Gemfile /srv/jekyll
+#ADD Gemfile.lock /srv/jekyll
+WORKDIR /srv/jekyll
+
+RUN gem install jekyll bundler && \
+    bundle install --no-cache && \
+    bundle list
+
+EXPOSE 8080
+COPY bin/entry_point.sh /tmp/entry_point.sh
+CMD ["/tmp/entry_point.sh"]
+
+
+
