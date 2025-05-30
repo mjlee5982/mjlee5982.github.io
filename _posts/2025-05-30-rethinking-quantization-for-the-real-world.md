@@ -229,6 +229,7 @@ While existing research primarily focuses on data sampling and training methods 
 
 ### 4.4 what are the limitations of this work? 
 Despite showing meaningful experimental results, the study is currently limited to the CIFAR10-LT dataset and a single VGG16 model. To generalize these findings more broadly, it will be necessary to expand experiments to include additional datasets and models.
+Although we heuristically evaluated MPQ sensitivity in relatively simple models like VGG16, further research is needed to optimize the extensive search space required for determining appropriate bit-width settings in more complex models.
 
 
 
